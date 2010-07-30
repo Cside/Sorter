@@ -16,7 +16,7 @@ sub new {
 sub set_values {
     my $self = shift;
     if ( @_ ) {
-        $self->{values} = [@_];
+        $self->{values} = [ @_ ];
     }
     return $self->{values};
 }
@@ -71,4 +71,3 @@ sub sort {
 }
 
 1;
-
